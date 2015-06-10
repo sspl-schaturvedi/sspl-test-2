@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* Custom Styles and Overwrites */
+
+body {
+    padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	background-image:url(../img/header-bg.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	font-family:arial, sans-serif;
+}
+
+.navbar {
+	background:#fff;
+	border-radius:0px 0px 6px 6px;
+	box-shadow:0px 2px 4px #666;
+}
+
+.logo {
+	margin:4px;
+}
+
+.jumbotron {
+	background:#fff;
+	box-shadow:0px 0px 3px #666;
+	border:1px solid #ccc;
+	padding-top:28px !important
+}
+
+.jumbotron p{
+	font-size:14px;
+}
+
+.container-youtube p {
+	margin-bottom:0px;
+	font-size:12px;
+}
+
+.thumbnail {
+	margin-bottom:10px;
+}
+
+.container-twitter {
+	background:#46C8F4;
+	color:#fff;
+	padding:12px 0px 6px;
+	border-radius:6px;
+	font-size:16px !important;
+	margin:10px 0px;
+}
+
+.container-twitter a, .container-twitter a:active, .container-twitter a:hover, .container-twitter a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+
+.twitter-first {
+	line-height:100px;
+}
+
+.slider{width:95%; height:12px; margin:0 auto} 
+.slidernav{float:right; width:20px;margin: 0px 2px;}
+.youtubeActive{float:right; width:20px;margin: 0px 2px;}
+.youtubeActive::before{content: url(../img/slidernav.PNG)}
+.slidernav::before{content: url(../img/slidernavmain.png);}
+
+.embed-responsive-4by3 {
+	padding-bottom:20%;
+}
+
+.container-google {
+	padding:0px 24px;
+}
+
+.logout{list-style:none;}
+
+
+.google-trends-desktop, .google-trends-tablet, .google-trends-mobile {
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+	.google-trends-desktop {
+		display:block;
+	}
+	.google-trends-tablet {
+		display:none;
+	}
+	.google-trends-mobile {
+		display:none;
+	}
+	.logout{margin-top: 2.6%;
+  margin-right: 4%;}
+  .container-google {
+	margin-bottom:-20px
+}
+  
+}
+ 
+	
+	
+}
+
+@media only screen and (max-width: 991px) {
+    /* phones */
+	.google-trends-desktop {
+		display:none;
+	}
+	.google-trends-tablet {
+		display:block;
+		height:200px;
+	}
+	.google-trends-mobile {
+		display:none;
+	}
+	.twitter-img{width:20%; float:right}
+	
+	.twitter-first{line-height:inherit}
+	.logout{margin-top: 4.6%;
+  margin-right: 3%;  padding: 0px;}
+}
+
+@media only screen and (max-width: 767px) {
+    /* portrait phones */
+	.google-trends-desktop {
+		display:none;
+	}
+	.google-trends-tablet {
+		display:none;
+	}
+	.google-trends-mobile {
+		display:block;
+		height:300px;
+	}
+	.twitter-img{width:30%; float:right}
+	
+	.twitter-first{line-height:inherit}
+	
+	.youtube-margin-bottom{  margin-bottom: 10px;}
+	.logout{margin-top: 8.6%;
+  margin-right: 3%;  padding: 0px;}
+  .slider {
+  width: 25%;
+  height: 12px;
+  float: right;
+  margin-top: 13%;
+  margin-right: 10%;
+}
